@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap后台管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- jquery必须在bootstrap之前加载 -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+ 	<nav class="navbar navbar-inverse nacbar-fixed-top">
+ 		<div class="container-fluid">
+ 			<div class="navbar-header">
+ 				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#info">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a src="index.html" class="navbar-brand">
+ 					<img src="img/logo.jpg" alt="bootstrap后台" style="width: 20px;">
+ 				</a>
+ 				<a src="index.html" class="navbar-brand">
+ 					Bootstrap后台管理
+ 				</a>
+ 			</div>
+ 			<div id="info" class="collapse navbar-collapse">
+ 				<ul class="nav navbar-nav navbar-right">
+	 				<li class="navbar-dropdown">
+	 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">admin<span class="caret"></span></a>
+	 					<ul class="dropdown-menu">
+	 						<li><a href="info.html">个人资料</a></li>
+	 						<li><a href="login.html">退出</a></li>
+	 					</ul>
+	 				</li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 	</nav>
+ 	<div class="container-fluid" style="margin-top: -20px;">
+ 		<div class="row col-xs-2 col-md-2 col-lg-2">
+ 			<nav class="row navbar navbar-default">
+ 				<ul class="nav">
+	 				<li>
+	 					<a class="col-xs-offset-1" href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1 text-muted" href="config.html"><span class="glyphicon glyphicon-cog"></span> 网站配置</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1" href="admin.html"><span class="glyphicon glyphicon-user"></span> 管理员</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1" href="list.html"><span class="glyphicon glyphicon-list"></span> 商品列表</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1" href="user.html"><span class="glyphicon glyphicon-picture"></span> 用户列表</a>
+	 				</li>
+ 				</ul>
+ 			</nav>
+ 		</div>
+ 		<div class="col-xs-10">
+ 			<div class="container-fluid">
+ 				<ol class="breadcrumb">
+	 				<li><a href="index.html">首页</a></li>
+	 				<li class="active">网站配置</li>
+	 			</ol>
+ 			</div>
+ 			<div class="container-fluid">
+ 				<ul class="nav nav-pills">
+ 					<li class="active">
+ 						<a href="#index" data-toggle="tab">基础配置</a>
+ 					</li>
+ 					<li>
+ 						<a href="#wechat" data-toggle="tab">微信配置</a>
+ 					</li>
+ 					<li>
+ 						<a href="#alipay" data-toggle="tab">支付宝配置</a>
+ 					</li>
+ 				</ul>
+ 				<form class="form-horizontal" action="">
+ 					<div class="tab-content">
+ 						<div id="index" class="tab-pane fade in active" style="margin-top: 15px;">
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">网站名</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="name" placeholder="前后端网站名称" value="bootstrap">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">域名</label>
+ 								<div class="col-xs-10">
+ 									<input type="url" class="form-control" name="host" placeholder="本站域名" value="http://www.gongweiwei.com">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">网站logo</label>
+ 								<div class="col-xs-10">
+ 									<input type="file" class="form-control" name="logo" placeholder="网站logo">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">联系人</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="user" placeholder="联系人" value="龚伟伟">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">联系电话</label>
+ 								<div class="col-xs-10">
+ 									<input type="phone" class="form-control" name="telephone" placeholder="联系电话" value="13125356379">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">联系邮箱</label>
+ 								<div class="col-xs-10">
+ 									<input type="email" class="form-control" name="email" placeholder="联系邮箱" value="1284921771@qq.com">
+ 								</div>
+ 							</div>
+ 						</div>
+ 						<div id="wechat" class="tab-pane fade" style="margin-top:15px;">
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">KEY</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="wechat_key" placeholder="KEY" value="%ssss">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">logo</label>
+ 								<div class="col-xs-10">
+ 									<input type="file" class="form-control" name="wechat_logo" placeholder="logo">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">Appid</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="wechat_appid" placeholder="Appid" value="3601211999">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">Appsecret</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="wechat_appsecret" placeholder="Appsecret" value="08243118">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">支付证书</label>
+ 								<div class="col-xs-10">
+ 									<input type="file" class="form-control" name="wechat_zhengshu" placeholder="支付证书">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">支付证书密钥</label>
+ 								<div class="col-xs-10">
+ 									<input type="file" class="form-control" name="wechat_zhengshu_password" placeholder="支付证书密钥">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">状态</label>
+ 								<div class="col-xs-10">
+ 									<select name="wechat_status" class="form-control">
+ 										<option value="1">开启</option>
+ 										<option value="0">关闭</option>
+ 									</select>
+ 								</div>
+ 							</div>
+ 						</div>
+ 						<div id="alipay" class="tab-pane fade" style="margin-top:15px;">
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">KEY</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="alipay_key" placeholder="KEY" value="%ssss">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">logo</label>
+ 								<div class="col-xs-10">
+ 									<input type="file" class="form-control" name="alipay_logo" placeholder="logo">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">Appid</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="alipay_appid" placeholder="Appid" value="3601211999">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">Appsecret</label>
+ 								<div class="col-xs-10">
+ 									<input type="text" class="form-control" name="alipayt_appsecret" placeholder="Appsecret" value="08243118">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">支付证书</label>
+ 								<div class="col-xs-10">
+ 									<input type="file" class="form-control" name="alipay_zhengshu" placeholder="支付证书">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">支付证书密钥</label>
+ 								<div class="col-xs-10">
+ 									<input type="file" class="form-control" name="alipay_zhengshu_password" placeholder="支付证书密钥">
+ 								</div>
+ 							</div>
+ 							<div class="form-group">
+ 								<label class="col-xs-2 control-label">状态</label>
+ 								<div class="col-xs-10">
+ 									<select name="alipay_status" class="form-control">
+ 										<option value="1">开启</option>
+ 										<option value="0">关闭</option>
+ 									</select>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="form-group">
+ 								<div class="col-xs-10 col-xs-offset-2">
+ 									<button type="submit" class="btn btn-default">保存</button>
+ 								</div>
+ 							</div>
+ 				</form>
+ 			</div>
+ 		</div>
+ 	</div>
+</body>
+<script type="text/javascript"></script>
+</html>

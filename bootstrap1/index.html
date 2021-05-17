@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap后台管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- jquery必须在bootstrap之前加载 -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+ 	<nav class="navbar navbar-inverse nacbar-fixed-top">
+ 		<div class="container-fluid">
+ 			<div class="navbar-header">
+ 				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#info">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a src="index.html" class="navbar-brand">
+ 					<img src="img/logo.jpg" alt="bootstrap后台" style="width: 20px;">
+ 				</a>
+ 				<a src="index.html" class="navbar-brand">
+ 					Bootstrap后台管理
+ 				</a>
+ 			</div>
+ 			<div id="info" class="collapse navbar-collapse">
+ 				<ul class="nav navbar-nav navbar-right">
+	 				<li class="navbar-dropdown">
+	 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">admin<span class="caret"></span></a>
+	 					<ul class="dropdown-menu">
+	 						<li><a href="info.html">个人资料</a></li>
+	 						<li><a href="login.html">退出</a></li>
+	 					</ul>
+	 				</li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 	</nav>
+ 	<div class="container-fluid" style="margin-top: -20px;">
+ 		<div class="row col-xs-2 col-md-2 col-lg-2">
+ 			<nav class="row navbar navbar-default">
+ 				<ul class="nav">
+	 				<li>
+	 					<a class="col-xs-offset-1 text-muted" href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1" href="config.html"><span class="glyphicon glyphicon-cog"></span> 网站配置</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1" href="admin.html"><span class="glyphicon glyphicon-user"></span> 管理员</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1" href="list.html"><span class="glyphicon glyphicon-list"></span> 商品列表</a>
+	 				</li>
+	 				<li>
+	 					<a class="col-xs-offset-1" href="user.html"><span class="glyphicon glyphicon-picture"></span> 用户列表</a>
+	 				</li>
+ 				</ul>
+ 			</nav>
+ 		</div>
+ 		<div class="col-xs-10">
+ 			<div class="container-fluid">
+ 				<ol class="breadcrumb">
+	 				<li><a href="index.html">首页</a></li>
+	 				<li class="active">详情</li>
+	 			</ol>
+ 			</div>
+ 			<div class="container-fluid">
+ 				<div class="col-xs-9">
+ 					<div class="col-xs-4">
+ 						<ul class="list-group">
+ 							<li class="list-group-item">
+ 								<span class="badge alert-success">19</span>今日新增用户
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-info">101</span>7天内新增用户
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-danger">443</span>1月内新增用户
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-default">3903</span>总用户数量
+ 							</li>
+ 						</ul>
+ 					</div>
+ 					<div class="col-xs-4">
+ 						<ul class="list-group">
+ 							<li class="list-group-item">
+ 								<span class="badge alert-deafult">19</span>预处理订单
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-danger">555</span>未发货订单
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-info">443</span>未收货订单
+ 							</li>
+ 						</ul>
+ 					</div>
+ 					<div class="col-xs-4">
+ 						<ul class="list-group">
+ 							<li class="list-group-item">
+ 								<span class="badge alert-success">40</span>今日新增订单
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-info">200</span>7天内新增订单
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-danger">783</span>1月内新增订单
+ 							</li>
+ 							<li class="list-group-item">
+ 								<span class="badge alert-default">6776</span>总订单数量
+ 							</li>
+ 						</ul>
+ 					</div>
+ 					<div class="h5">
+ 						公告（通知）
+ 					</div>
+ 					<div class="panel-group">
+ 						<div class="panel panel-info">
+ 							<div class="panel panel-heading">
+ 								<h4 class="panel-title">
+ 									<a class="collapsed" data-toggle="collapse" href="#not1">预处理工具</a>
+ 								</h4>
+ 							</div>
+ 							<div id="not1" class="panel-collapse collapse">
+ 								<div class="panel-body">虽然可以直接使用 Bootstrap 提供的 CSS 样式表，但是不要忘记，Bootstrap 的源码是采用最流行的 CSS 预处理工具 Less 和 Sass 开发的。你可以直接采用预编译的 CSS 文件快速开发，也可以从 Bootstrap 源码自定义自己需要的样式。</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="panel-group">
+ 						<div class="panel panel-info">
+ 							<div class="panel panel-heading">
+ 								<h4 class="panel-title">
+ 									<a class="collapsed" data-toggle="collapse" href="#not2">一个框架、多种设备。</a>
+ 								</h4>
+ 							</div>
+ 							<div id="not2" class="panel-collapse collapse">
+ 								<div class="panel-body">你的网站和应用能在 Bootstrap 的帮助下通过同一份源码快速、有效地适配手机、平板和 PC 设备，这一切都是 CSS 媒体查询（Media Query）的功劳。</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="panel-group">
+ 						<div class="panel panel-info">
+ 							<div class="panel panel-heading">
+ 								<h4 class="panel-title">
+ 									<a class="collapsed" data-toggle="collapse" href="#not3">功能完备</a>
+ 								</h4>
+ 							</div>
+ 							<div id="not3" class="panel-collapse collapse">
+ 								<div class="panel-body">Bootstrap 提供了全面、美观的文档，你能在这里找到关于普通 HTML 元素、HTML 和 CSS 组件以及 jQuery 插件方面的所有详细文档。</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-xs-3">
+ 					<table class="table table-striped">
+ 						<caption>服务器信息</caption>
+ 						<tbody>
+ 							<tr>
+ 								<td>当前状态</td>
+ 								<td>正常</td>
+ 							</tr>
+ 							<tr>
+ 								<td>系统版本</td>
+ 								<td>window 10</td>
+ 							</tr>
+ 							<tr>
+ 								<td>框架</td>
+ 								<td>Bootstrap</td>
+ 							</tr>
+ 							<tr>
+ 								<td>后台语言</td>
+ 								<td>PHP 7</td>
+ 							</tr>
+ 							<tr>
+ 								<td>数据库</td>
+ 								<td>mysql 5.0</td>
+ 							</tr>
+ 							<tr>
+ 								<td>硬盘剩余</td>
+ 								<td>50G</td>
+ 							</tr>
+ 						</tbody>
+ 					</table>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+</body>
+<script type="text/javascript"></script>
+</html>
